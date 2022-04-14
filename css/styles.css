@@ -140,6 +140,88 @@ header {
 .list-advantages > li {
   width: 270px;
 }
+
+.list-advantages > li::before {
+  content: "";
+  display: block;
+  height: 120px;
+  background-color: #f5f4fa;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+/* here*/
+.list-advantages > .attention-to-details::before {
+  background-image: url(../images/sprite.svg#icon-antenna);
+}
+/*end*/
+/*.social-medias {
+  display: flex;
+}*/
+
+.icon-medias {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.icon-medias .icons {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-medias > .icons {
+  display: block;
+}
+
+.icon {
+  height: 44px;
+  width: 44px;
+  display: flex;
+  border-radius: 50%;
+  color: #afb1b8;
+  /*outline: 3px solid red;*/
+}
+.icons .icon-media {
+  /*fill: currentColor;*/
+}
+.icon-medias .icon:hover {
+  background-color: var(--accent);
+  fill: var(--background-color);
+}
+
+.social-medias {
+  margin: 16px 32px 0;
+}
+.icon-medias > .icon:not(:last-child) {
+  margin-right: 10px;
+}
+
+.icons {
+  align-self: center;
+  margin: 0 auto;
+}
+.icons.insta {
+  height: 20px;
+  width: 20px;
+}
+
+.icons.twitter {
+  height: 16.25px;
+  width: 20px;
+}
+
+.icons.facebook {
+  height: 20px;
+  width: 10px;
+}
+
+.icons.linkedin {
+  height: 20px;
+  width: 20px;
+}
 .advantages {
   font-weight: 700;
   font-size: 14px;
