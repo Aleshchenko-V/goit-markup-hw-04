@@ -116,7 +116,6 @@ header {
 }
 .hero-title {
   color: var(--background-color);
-
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -204,7 +203,7 @@ header {
 }
 
 .icon-link {
-  display: inline-block;
+  display: block;
   align-self: center;
   margin: 0 auto;
   color: var(--background-color);
@@ -283,7 +282,14 @@ header {
   object-fit: cover;
 }
 
-.client:hover {
+.client-link {
+  color: #afb1b8;
+  display: flex;
+  justify-content: center;
+  fill: currentColor;
+}
+.client:hover .client-link,
+.client-link:focus {
   fill: var(--accent);
 }
 
@@ -305,6 +311,9 @@ header {
   line-height: 1.19;
   letter-spacing: 0.03em;
   background-color: var(--background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .participant-description {
@@ -349,6 +358,9 @@ header {
   color: var(--primary-text-color);
   margin-bottom: 4px;
 }
+.project-image {
+  display: block;
+}
 
 .type-of-project {
   line-height: 1.88;
@@ -362,6 +374,10 @@ header {
   border-left: 1px solid #eeeeee;
 }
 
+.project:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .filter-item {
   padding: 6px 22px;
   border-radius: 4px;
