@@ -1,4 +1,3 @@
-/*Перед отправкой удалитьстили, которые каскадируются с боди*/
 :root {
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
@@ -50,15 +49,24 @@ header {
   border-bottom: 1px solid #ececec;
 }
 
+.header-icon {
+  fill: currentColor;
+  vertical-align: middle;
+}
+
+.header-icon:nth-child(1) {
+  height: 16px;
+  width: 16px;
+}
+
+.header-icon:nth-child(2) {
+  height: 20px;
+  width: 10px;
+}
 .link:hover,
 .link:active,
 .link:focus {
   color: var(--accent);
-}
-
-.envelope::before {
-  content: "";
-  /* тут иконки*/
 }
 
 .contact {
@@ -119,9 +127,6 @@ header {
 }
 
 .button {
-  /*display: flex;*/
-  /*align-items: center;*/
-  /*margin: 0 auto;*/
   display: inline-block;
   padding: 10px 32px;
   width: 200.3px;
@@ -412,6 +417,7 @@ footer {
 .site-nav,
 .contacts-nav {
   display: flex;
+  align-self: center;
 }
 
 .site-nav .link,
@@ -422,7 +428,6 @@ footer {
 .site-nav > li + li,
 .contacts-nav > li + li {
   margin-left: 50px;
-  /*background-color: teal;*/
 }
 
 .main-nav,
@@ -509,8 +514,8 @@ figure {
   font-size: 14px;
   line-height: 1.17;
   display: inline-block;
-  padding-top: 10px;
-  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 23px;
   align-self: flex-end;
 }
 
