@@ -146,25 +146,16 @@ header {
   width: 270px;
 }
 
-.list-advantages > li::before {
-  content: "";
-  display: block;
+.advantage-image {
+  display: flex;
   height: 120px;
   background-color: #f5f4fa;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   border-radius: 4px;
   margin-bottom: 30px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
-/* here*/
-.list-advantages > .attention-to-details::before {
-  content: url("../images/sprite.svg/#icon-antenna");
-}
-/*end*/
-/*.social-medias {
-  display: flex;
-}*/
 
 .icon-medias {
   list-style: none;
@@ -193,7 +184,7 @@ header {
   border-radius: 50%;
 }
 .icon-media {
-  fill: grey;
+  fill: #afb1b8;
 }
 
 .footer-media {
