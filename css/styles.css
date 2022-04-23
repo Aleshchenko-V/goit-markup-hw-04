@@ -300,6 +300,7 @@ header {
 .client:focus .client-link {
   fill: var(--accent);
 }
+
 .client:hover {
   border-color: var(--accent);
 }
